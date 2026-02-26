@@ -1,0 +1,5 @@
+usuario:
+  path: /usuarios
+  controller: App\Controller\UsuarioController::list
+
+

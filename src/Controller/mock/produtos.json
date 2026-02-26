@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "nome": "Ypioca",
+    "preco": 10.90
+  },
+  {
+    "id": 2,
+    "nome": "Vinho Sao Francisco",
+    "preco": 10.90
+  },
+  {
+    "id": 3,
+    "nome": "Vodka Slova",
+    "preco": 10.90
+  }
+]

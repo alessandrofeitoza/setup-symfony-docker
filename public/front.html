@@ -1,0 +1,28 @@
+<h1>Bebidas</h1>
+<hr>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Valor</th>
+        </tr>
+    </thead>
+    <tbody id="tabela">
+
+    </tbody>
+</table>
+
+<script>
+    fetch('http://localhost:8080/produto')
+        .then(res => res.json())
+        .then(data => {
+            tabela.innerHTML = data.map(r => `
+                <tr>
+                    <td>${r.id}</td>
+                    <td>${r.nome}</td>
+                    <td>${r.preco}</td>
+                </tr>
+            `).join('');
+        })
+</script>
